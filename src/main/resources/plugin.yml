@@ -15,6 +15,6 @@ commands:
     adventuringtime:
         aliases: [atcheck,atchk,achk,biomecheck,biomechk,bchk]
         description: Show which biomes a player has visited, and those that are still undiscovered.
-        usage: /<command> [v|u|g]
+        usage: /<command> [v|u|g|t]
         permission: adventuringtime.use
         permission-message: You don't have the permission <permission> to use this command

@@ -122,6 +122,17 @@ public class AdventuringTimeCommand implements CommandExecutor {
                             gui.setContents(stacks);
                             player.openInventory(gui);
                         }
+                        if (args[0].equalsIgnoreCase("t")) {
+                            if (plugin.getServer().getPluginManager().isPluginEnabled("TARDIS")) {
+                                player.sendMessage(ChatColor.GOLD + "The TARDIS biome name equivalents are as follows:");
+                                player.sendMessage(ChatColor.DARK_GREEN + "Minecraft biome name" + ChatColor.RESET + " => " + ChatColor.DARK_AQUA + "TARDIS biome name");
+                                for (Map.Entry<String, Integer> map : achieve.entrySet()) {
+                                    player.sendMessage(ChatColor.GREEN + map.getKey() + ChatColor.RESET + " => " + ChatColor.AQUA + AdventuringTimeTARDIS.lookup.get(map.getKey()));
+                                }
+                            } else {
+                                player.sendMessage("The TARDIS plugin must be installed to use that command argument!");
+                            }
+                        }
                     }
                     where.clear();
                     return true;
