@@ -3,7 +3,7 @@ description: 'Tracker for the Adventuring Time achievement. Players get the achi
 main: me.eccentric_nz.adventuringtime.AdventuringTime
 name: AdventuringTime
 load: POSTWORLD
-version: '1.0'
+version: '1.0.1'
 website: http://dev.bukkit.org/bukkit-plugins/adventuringtime
 dev-url: http://dev.bukkit.org/bukkit-plugins/adventuringtime
 url: http://dev.bukkit.org/bukkit-plugins/adventuringtime
